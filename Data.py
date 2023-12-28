@@ -1,14 +1,13 @@
 from pyrogram.types import InlineKeyboardButton
 
-
 class Data:
     generate_single_button = [
-        InlineKeyboardButton("🔥 sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")
+        InlineKeyboardButton(" Generating Session ", callback_data="generate")
     ]
 
     home_buttons = [
         generate_single_button,
-        [InlineKeyboardButton(text="🏠 ʀᴇᴛᴜʀɴ ʜᴏᴍᴇ 🏠", callback_data="home")],
+        [InlineKeyboardButton(text=" Back ", callback_data="home")],
     ]
 
     generate_button = [generate_single_button]
@@ -17,65 +16,44 @@ class Data:
         generate_single_button,
         [
             InlineKeyboardButton(
-                "✨ ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs ᴀɴᴅ sᴛᴀᴛᴜs ✨", url="https://t.me/Alexa_BotUpdates/77"
+                "Update Channel", url="https://t.me/realenzy"
             )
         ],
         [
-            InlineKeyboardButton("🤔 ʜᴏᴡ ᴛᴏ ᴜsᴇ 🤔", callback_data="help"),
-            InlineKeyboardButton("🎪 ᴀʙᴏᴜᴛ 🎪", callback_data="about"),
+            InlineKeyboardButton(" How to Use ", callback_data="help"),
+            InlineKeyboardButton(" About ", callback_data="about"),
         ],
-        [InlineKeyboardButton("💌 ᴏᴛʜᴇʀ ʙᴏᴛs 💌", url="https://t.me/Alexa_Help")],
-    ]
+    ]  # Removed the "Other Bots" button
 
     START = """
-ʜᴇʏ {}
-ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {}
-ɪꜰ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴛʀᴜsᴛ ᴛʜɪs ʙᴏᴛ, 
-1) sᴛᴏᴘ ʀᴇᴀᴅɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ
-2) ᴅᴇʟᴇᴛᴇ ᴛʜɪs ᴄʜᴀᴛ
-sᴛɪʟʟ ʀᴇᴀᴅɪɴɢ?
-ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ. ᴜsᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ !
-ʙʏ @Shayri_Music_Lovers ᴀɴᴅ @Alexa_BotUpdates
+    Hey there {}
+    Welcome to {} 
+    If you don't trust this bot,
+    1) Stop reading this message
+    2) Delete this chat
+    Still reading?
+    You can use me to generate pyrogram and telethon string session. Use below buttons to learn more!
     """
 
     HELP = """
-✨ **ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs** ✨
+    Commands
 
-/about - ᴀʙᴏᴜᴛ ᴛʜᴇ ʙᴏᴛ
-/help - ᴛʜɪs ᴍᴇssᴀɢᴇ
-/start - sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
-/repo - ɢᴇᴛ ʀᴇᴘᴏ
-/generate - sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ
-/cancel - ᴄᴀɴᴄᴇʟ ᴛʜᴇ ᴘʀᴏᴄᴇss
-/restart - ᴄᴀɴᴄᴇʟ ᴛʜᴇ ᴘʀᴏᴄᴇss
-"""
+    /about - About the bot
+    /help - This message
+    /start - Start the bot
+    /generate - Start generating session
+    /cancel - Cancel the process
+    /restart - Cancel the process
+    """
 
     # About Message
     ABOUT = """
-**ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ** 
+    **About This Bot**
 
-ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙʏ @Alexa_BotUpdates
-
-sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/TheTeamAlexa/Session_Robot)
-ғʀᴀᴍᴇᴡᴏʀᴋ : [ᴘʏʀᴏɢʀᴀᴍ](docs.pyrogram.org)
-ʟᴀɴɢᴜᴀɢᴇ : [ᴘʏᴛʜᴏɴ](www.python.org)
-ᴏᴡɴᴇʀ : @Jankari_Ki_Duniya
+    A Telegram bot to generate pyrogram and telethon string session from my master @titimothy
     """
 
     # Repo Message
     REPO = """
-━━━━━━━━━━━━━━━━━━━━━━━━
-💥 A ᴘᴏᴡᴇʀғᴜʟ ʙᴏᴛ
-ᴏғ ♻️ ᴅʀ ᴀsᴀᴅ ᴀʟɪ 🔥
-━━━━━━━━━━━━━━━━━
-ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ғᴏʀ ᴛɢ...
-┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴇʀ [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali)
-┣★ ʜᴇᴀʀᴛ ᴜs  [ʜᴇᴀʀᴛ ❤️](https://t.me/Give_Me_Heart)
-┣★ ʙᴏᴛ ᴜᴏᴅᴀᴛᴇs [ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs](https://t.me/TheTeamAlexa)
-┣★ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/TheTeamAlexa/Session_Robot)
-┣★ ɴᴇᴛᴡᴏʀᴋ [ʀᴏᴄᴋs](https://t.me/Shayri_Music_Lovers)
-┗━━━━━━━━━━━━━━━━━┛
-💞 
-IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Jankari_Ki_Duniya
-   """
+    What are you doing man?
+    """
